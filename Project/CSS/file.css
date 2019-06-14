@@ -12,8 +12,9 @@ header{
     width: 100%;
     position: fixed; 
     z-index: 1; 
+    box-shadow: 0px 1px  #F1EFFD;
 }
-#logo{
+.logo{
     padding-top: 19px;
     padding-bottom: 17px;
 }
@@ -31,7 +32,7 @@ a{
     font-family: 'Montserrat', sans-serif;   
 }
 
-#color-login{
+.color-login{
     color:#4DAEB2;
 }
 
@@ -39,38 +40,99 @@ a:hover{
     background-color: #4DAEB2;
     color: white;
 }
+
 .first-sec-div1{
     padding-top: 88px;
-    box-shadow: 0px 10px 10px #726F7A; 
+    padding-bottom: 83px;
+    margin-bottom: 23px;
 }
-.first-sec-div1 .maindiv{
+.first-sec-div2{
+    box-shadow: 0px 4px 10px #DED9F9; 
+    height: 493px;
+}
+.first-sec-div2 .maindiv{
     background-color: #FAF9FF;
     position:relative;
 }
 
-.first-sec-div1 .maindiv img{
+.first-sec-div2 .maindiv img{
     position: absolute;
     top:23px;
     right: 0%;
 }
-#text1{
-   
+.content{
+    float: left;
+    margin-top: 96px;
+}
+.text1{
     background-color: #FAF9FF;
     width: 564px;
     font-family: 'Rubik', sans-serif;
     font-size: 40px;
     text-align: right;
-    position: absolute;
-    top: 96px;
-    right:496px;
+    margin-left: 120px;    
+    margin-bottom: 24px;
+    color: #261D4B;
 }
-#text2{
+.text2{
     width: 640px;
     font-family: 'Montserrat', sans-serif; 
     color: #726F7A;
     font-size: 20px;
     text-align: right;
-    position: absolute;
-    top: 240px;
-    right: 496px;
+    margin-left: 50px;
+    margin-top: 0px;
+    margin-bottom: 0px;
+}
+.button{
+	transform: skew(-20deg);
+    border-radius:8px;
+    background-color: #82D7DB;
+    font-size: 18px;
+    text-align: right;
+    float: left;
+    color: #28282E;
+    padding: 15px 21px;
+    font-family: 'Montserrat', sans-serif;
+    margin-left: 480px;
+    margin-top: 0px;
+}
+.first-sec-div1 .first-sec-div2 .maindiv a{
+    /*transform: skew(20deg);*/
+}
+
+.second-sec-div1{
+    height: 770px;   
+}
+.sec2-heading{
+    text-align: center;
+    font-family: 'Rubik', sans-serif;
+    color: #261D4B;
+    font-size: 40px;
+    margin-top: 0px;
+    margin-bottom: 0px;
+}
+.sec2-content{
+    color: #726F7A;
+    font-size: 18px;
+    text-align: center;
+    line-height: 26px;
+    font-family: 'Montserrat', sans-serif;
+    margin-top: 30px;
+}
+.poly1{
+    margin-left: 207px;
+    display: inline-block;
+}
+.poly2{
+    margin-left: 55px;
+    display: inline-block;
+}
+.poly3{
+    margin-left: 65px;
+    display: inline-block;
+}
+.poly4{
+    margin-left: 65px;
+    display: inline-block;
 }

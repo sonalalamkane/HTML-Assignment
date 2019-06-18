@@ -3,6 +3,8 @@ body{
     background-color: white;
 }
 
+/* navigation Bar*/
+
 .maindiv{
     width: 1170px;
     margin: 0px auto;
@@ -20,12 +22,12 @@ header{
 }
 .nav{
     float: right;
-    padding: 35px 15px;
 }
 
 .nav a{
     padding: 35px 15px;
     color: black;
+    float:left;
     text-decoration: none;
     text-align: center;
     font-size: 16px;
@@ -42,6 +44,8 @@ header{
     background-color: #4DAEB2;
     color: white;
 }
+
+/* Monitor Section */
 
 .first-sec-div1{
     padding-top: 88px;
@@ -75,6 +79,7 @@ header{
     margin-left: 120px;    
     margin-bottom: 24px;
     color: #261D4B;
+    font-weight: 300;
 }
 .text2{
     width: 640px;
@@ -88,31 +93,29 @@ header{
 }
 .button{
 	transform: skew(-20deg);
-    border-radius:8px;
+    border-radius: 8px;
     background-color: #82D7DB;
     float: left;
-    margin-left: 480px;
     font-size: 18px;
-    text-align: right;  
-    color: #28282E;
-    padding: 15px 21px;
-    font-family: 'Montserrat', sans-serif; 
-    margin-top: 0px;
-    margin-left: 521px;
-}
-.first-sec-div1 .first-sec-div2 .maindiv .content .button h6{
-    transform: skew(20deg);
-    margin: 0px 0px;
-/*    font-size: 18px;
     text-align: right;
     color: #28282E;
     padding: 15px 21px;
     font-family: 'Montserrat', sans-serif;
-    margin-left: 480px;
-    margin-top: 0px;*/
+    margin-top: 15px;
+    margin-left: 521px;
+    text-decoration: none;
+    font-weight: 400;
 }
+.first-sec-div1 .first-sec-div2 .maindiv .content .button h6{
+    transform: skew(20deg);
+    margin: 0px 0px;
+}
+
+/* Four polygon */
+
 .second_sec_div{
     margin-bottom: 52px;
+    text-align: center;
 }
 .sec2-heading{
     text-align: center;
@@ -121,6 +124,7 @@ header{
     font-size: 40px;
     margin-top: 0px;
     margin-bottom: 0px;
+    font-weight: 300;
 }
 .sec2-content{
     color: #726F7A;
@@ -130,65 +134,49 @@ header{
     font-family: 'Montserrat', sans-serif;
     margin-top: 30px;
 }
-.poly1{
-    background-image: url(../Images/poly1.png);
-    margin-left: 207px;
+.four_poly{
     display: inline-block;
+    text-align: center;
+    position: relative;
+}
+hr{
+    position: absolute;
+    color: #C7E3E3;
+    z-index: -1;
+    height: 1px;
+    margin-left: 169px;
+    width: 533px;
+    margin-top: 85px;
+}
+.poly1{
+    background-image: url(../Images/poly2.png);
     width: 154px;
     height: 171px;
+    float: left;
+    background-repeat: no-repeat;
+    text-align: center;
+    background-position: center;
+    margin: 0px 32px;
 }
-.poly1_img{
-    padding-top: 34px;
-    padding-left: 52px;
+.poly1:hover{
+    background-image: url(../Images/poly1.png);
 }
+
 .poly1_text{
     color: white;
-    text-align: left;
     font-family: 'Rubik', sans-serif;
     font-size: 26px;
-    padding-left: 44px;
+    margin: 0px;
     padding-top: 12px;
-    margin-top: 0px;
-    margin-bottom: 0px;
+    font-weight: 500;
 }
-.poly2{
-    background-image: url(../Images/poly2.png);
-    margin-left: 55px;
-    display: inline-block;
-    width: 136px;
-    height: 154px;
-}
-.poly3{
-    background-image: url(../Images/poly3.png);
-    margin-left: 65px;
-    display: inline-block;
-    width: 136px;
-    height: 154px;
-}
-.poly4{
-    background-image: url(../Images/poly4.png);
-    margin-left: 65px;
-    display: inline-block;
-    width: 136px;
-    height: 154px;
-}
+
 .poly_img{
-    padding-top: 27px;
-    padding-left: 39px;
+    padding-top: 34px;
 }
-.img_text{
-    color: white;
-    text-align: left;
-    font-family: 'Rubik', sans-serif;
-    font-size: 26px;
-    margin-left: 22px;
-    margin-top: 12px;
-}
+
 .screen_shot{
     float: right;
-    margin-top: 23px;
-    margin-right: 30px;
-    margin-bottom: 30px;
 }
 .screen_shot_div{
     margin-left:60px;
@@ -196,7 +184,7 @@ header{
     border: 1px solid #DCDCDC;
     position: relative;
     top: 28px;
-    margin-bottom: 52px;
+    padding:30px;
 }
 .screen_shot_div::before{
     position: absolute;
@@ -208,7 +196,7 @@ header{
     border-right:0px solid #DCDCDC;
     top: 319px;
     left:220px;
-    margin-left: -25px;
+    margin-left: -48px;
     content:"";
     margin-top: -346px;
     transform: rotate(45deg);
@@ -228,17 +216,19 @@ header{
 .top_para p{
     margin: 0px 0px;
 }
-.bottom_content{
+.bottom_content ul{
     width: 388px;
     color: #615F67;
     font-size: 16px;
     display: inline-block;
     font-family: 'Montserrat', sans-serif;
     text-align: left;
-    margin-left: 7px;
     margin-bottom: 90px;
-    margin-top: 9px;
+    padding: 0px;
 }
+
+/* Three Polygon */
+
 .third_section{
     background-color: #F7F7FB;
     text-align: center;
@@ -265,29 +255,27 @@ header{
     padding-top: 34px;
     margin-bottom: 53px;
     margin-top: 0px;
+    font-weight: 300;
 }
 .third_sec_poly{
     display: inline-block;
     margin-bottom: 66px;
+    text-align: center;
 }
 .poly5{
     background-image: url(../Images/poly5.png);
     width: 230px;
     height: 258px;
     float: left;
-    margin-right: 135px;
+    margin: 0px 67px;
+    text-align: center;
+    background-position: center;
 }
 .poly5_img2{
     margin-left: 14px;
     margin-right: 17px;
 }
-.poly6{
-    background-image: url(../Images/poly6.png);
-    width: 230px;
-    height: 258px;
-    float: left;
-    margin-right: 135px;
-}
+
 .poly6_inner_headings{
     color: #8ADCDB;
     font-size: 12px;
@@ -307,18 +295,12 @@ header{
     padding-bottom: 20px;
     border-right: 1px solid #7ECED2;
     border-left: 1px solid #7ECED2;
-    margin-bottom: 14px;
 }
 .poly6_img3{
     float: left;
     padding-left: 5px;
 }
-.poly7{
-    background-image: url(../Images/poly7.png);
-    width: 230px;
-    height: 258px;
-    float: left;
-}
+
 .poly7_img1{
     margin-right: 24px;
     margin-bottom: 9px;
@@ -328,22 +310,38 @@ header{
     margin-top: 40px;
     text-align: center;
     margin-bottom: 42px;
+    font-size: 22px;
+    font-family: 'Rubik', sans-serif;
+    font-weight: 500;
 }
-.third_sec_heading2-3{
+/*.third_sec_heading2-3{
     margin-bottom: 25px;
     color: #FFFFFF;
     margin-top: 40px;
-    text-align: center;
-}
+    text-align: center; 
+}*/ 
 .third_sec_text{
     color: white;
     font-family: 'Rubik', sans-serif;
     font-size: 20px;
-    margin-left: 32px;
     width: 166px;
-    height: 77px;
-    margin-top: 18px;
+    display: inline-block;
+    font-weight: 500;
+    margin: 0px;
+    padding-top: 26px;
 }
+.third_sec_text1{
+    color: white;
+    font-family: 'Rubik', sans-serif;
+    font-size: 20px;
+    width: 166px;
+    display: inline-block;
+    font-weight: 500;
+    margin: 0px;
+}
+
+/* Video Section */
+
 .video_section{
     text-align: center;
     margin-bottom: 31px;
@@ -354,6 +352,9 @@ header{
     font-family: 'Rubik', sans-serif;
     text-align: center;
 }
+
+/* Footer */
+
 footer{
     background-color: #2A2735;
     padding: 30px 0px;
@@ -385,3 +386,7 @@ i{
 .logo_bckground a{
     color: white;
 }
+
+
+
+

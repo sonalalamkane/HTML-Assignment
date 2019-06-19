@@ -111,9 +111,10 @@ a.active{
     text-decoration: none;
     font-weight: 400;
     line-height: 26px;
+    margin-right: 10px;
 }
- span h6{
-    
+.button span{
+    display: inline-block;
     transform: skew(20deg);
     margin: 0px 0px;
 }
@@ -152,10 +153,10 @@ a.active{
 .four_poly span{
     position: absolute;
     z-index: -1;
-    width: 509px;
-    border-top: 1px solid #C7E3E3;
-    left: 167px;
     top: 84px;
+    width: 82%;
+    border-top: 1px solid #C7E3E3;
+    left: 8%;
 }
 .poly1{
     background-image: url(../Images/poly1.png);
@@ -216,11 +217,10 @@ a.active{
     border-bottom:0px solid #DCDCDC;
     border-left:1px solid #DCDCDC;
     border-right:0px solid #DCDCDC;
-    top: 319px;
+    top: -26px;
     left: 20%;
     margin-left: -30px;
     content:"";
-    margin-top: -346px;
     transform: rotate(45deg);
     background: white;
 }
@@ -262,7 +262,7 @@ a.active{
     box-shadow: 1px 1px 0px 0px #8D87A8;
     top: 300px;
     left: 50%;
-    margin-left: -23px;
+    margin-left: -25px;
     content:"";
     margin-top: 110px;
     transform: rotate(45deg);
@@ -372,6 +372,7 @@ a.active{
     font-family: 'Rubik', sans-serif;
     text-align: center;
     font-weight: 300;
+    margin-bottom: 19px;
 }
 
 /* Footer */
@@ -390,6 +391,8 @@ footer{
     background-repeat: no-repeat;
     float: left;
     padding-top: 11px;
+    margin-right: 3px;
+    margin-left: 2px;
 }
 .footer_logos{
     float: right;
@@ -397,7 +400,7 @@ footer{
 }
 .logo_bckground a{
     color: white;
-    margin-left: 10px;
+    padding: 11px;
 }
 footer{
     background-color: #2A2735;

@@ -1,3 +1,7 @@
+*{
+    box-sizing: border-box;
+}
+
 body{
     margin: 0%;
     background-color: white;
@@ -25,17 +29,15 @@ header{
 }
 
 .nav a{
-    padding: 35px 15px;
+    padding: 36px 15px;
     color: black;
     float:left;
     text-decoration: none;
     text-align: center;
     font-size: 16px;
-    font-family: 'Montserrat', sans-serif;   
+    font-family: 'Montserrat', sans-serif;  
 }
-.nav a:first-child{
-    background-color: #4DAEB2;
-}
+
 .nav .color-login{
     color:#4DAEB2;
 }
@@ -44,70 +46,74 @@ header{
     background-color: #4DAEB2;
     color: white;
 }
-
+a.active{
+    background-color: #4DAEB2;
+    color: white;
+}
 /* Monitor Section */
 
 .first-sec-div1{
+    clear: both;
     padding-top: 88px;
-    padding-bottom: 83px;
-    margin-bottom: 23px;
+    box-shadow: 0px 4px 10px #DED9F9;
+    margin-bottom: 106px;
+    padding-bottom: 100px;
+    background-color: #FAF9FF;
 }
-.first-sec-div2{
-    box-shadow: 0px 4px 10px #DED9F9; 
-    height: 493px;
+.clear-both{
+    clear: both;
 }
-.first-sec-div2 .maindiv{
+.first-sec-div1 .maindiv{
     background-color: #FAF9FF;
     position:relative;
 }
 
-.first-sec-div2 .maindiv img{
+.first-sec-div1 .maindiv img{
     position: absolute;
     top:23px;
     right: 0%;
 }
-.content{
+.first-sec-div1 .maindiv .content{
     float: left;
     margin-top: 96px;
+    width: 640px;
+    margin-bottom: 0px;
 }
 .text1{
-    background-color: #FAF9FF;
-    width: 564px;
+    margin-bottom: 23px;
     font-family: 'Rubik', sans-serif;
-    font-size: 40px;
+    font-size: 52px;
     text-align: right;
-    margin-left: 120px;    
-    margin-bottom: 24px;
     color: #261D4B;
     font-weight: 300;
+    line-height: 58px;
 }
 .text2{
-    width: 640px;
-    font-family: 'Montserrat', sans-serif; 
+    font-family: 'Montserrat', sans-serif;
     color: #726F7A;
     font-size: 20px;
     text-align: right;
-    margin-left: 50px;
     margin-top: 0px;
     margin-bottom: 0px;
     font-weight: 300;
+    line-height: 26px;
 }
 .button{
-	transform: skew(-20deg);
+    transform: skew(-20deg);
     border-radius: 8px;
     background-color: #82D7DB;
-    float: left;
+    float: right;
     font-size: 18px;
-    text-align: right;
     color: #28282E;
     padding: 15px 21px;
     font-family: 'Montserrat', sans-serif;
     margin-top: 15px;
-    margin-left: 521px;
     text-decoration: none;
     font-weight: 400;
+    line-height: 26px;
 }
-.first-sec-div1 .first-sec-div2 .maindiv .content .button h6{
+ span h6{
+    
     transform: skew(20deg);
     margin: 0px 0px;
 }
@@ -115,6 +121,7 @@ header{
 /* Four polygon */
 
 .second_sec_div{
+    clear: both;
     margin-bottom: 52px;
     text-align: center;
 }
@@ -123,45 +130,57 @@ header{
     font-family: 'Rubik', sans-serif;
     color: #261D4B;
     font-size: 40px;
-    margin-top: 0px;
-    margin-bottom: 0px;
     font-weight: 300;
+    line-height: 40px;
 }
 .sec2-content{
     color: #726F7A;
     font-size: 18px;
     text-align: center;
-    line-height: 26px;
     font-family: 'Montserrat', sans-serif;
     margin-top: 30px;
+    margin-bottom: 38px;
     font-weight: 300;
+    line-height: 26px;
 }
 .four_poly{
     display: inline-block;
     text-align: center;
     position: relative;
+    margin-bottom: 13px;
 }
-hr{
+.four_poly span{
     position: absolute;
-    color: #C7E3E3;
     z-index: -1;
-    height: 1px;
-    margin-left: 169px;
-    width: 533px;
-    margin-top: 85px;
+    width: 509px;
+    border-top: 1px solid #C7E3E3;
+    left: 167px;
+    top: 84px;
 }
 .poly1{
-    background-image: url(../Images/poly2.png);
+    background-image: url(../Images/poly1.png);
     width: 154px;
     height: 171px;
-    float: left;
+    display: inline-block;
     background-repeat: no-repeat;
     text-align: center;
     background-position: center;
-    margin: 0px 32px;
+    margin: 0px 27px;
 }
-.poly1:hover{
+
+.poly2-3-4{
+    background-image: url(../Images/poly2.png);
+    width: 154px;
+    height: 171px;
+    display: inline-block;
+    background-repeat: no-repeat;
+    text-align: center;
+    background-position: center 7px;
+    margin: 0px 27px;
+}
+.poly2-3-4:hover{
     background-image: url(../Images/poly1.png);
+    background-position: center 0px;
 }
 
 .poly1_text{
@@ -171,13 +190,14 @@ hr{
     margin: 0px;
     padding-top: 12px;
     font-weight: 500;
+    line-height: 26px;
 }
 
 .poly_img{
     padding-top: 34px;
 }
 
-.screen_shot{
+.screen_shot_div .screen_shot{
     float: right;
 }
 .screen_shot_div{
@@ -197,36 +217,34 @@ hr{
     border-left:1px solid #DCDCDC;
     border-right:0px solid #DCDCDC;
     top: 319px;
-    left:220px;
-    margin-left: -48px;
+    left: 20%;
+    margin-left: -30px;
     content:"";
     margin-top: -346px;
     transform: rotate(45deg);
     background: white;
 }
-.top_para{
+.screen_shot_content{
     width: 444px;
+}
+.screen_shot_content p{
     font-size: 18px;
     color: #615F67;
     font-family: 'Montserrat', sans-serif;
     text-align: left;
-    margin-top: 23px;
-    margin-left: 30px;
-    margin-bottom: 0px;
     display: inline-block;
+    margin-bottom: 9px;
+    line-height: 26px;
 }
-.top_para p{
-    margin: 0px 0px;
-}
-.bottom_content ul{
-    width: 388px;
+.screen_shot_content ul{
     color: #615F67;
     font-size: 16px;
-    display: inline-block;
     font-family: 'Montserrat', sans-serif;
     text-align: left;
-    margin-bottom: 75px;
-    padding: 0px;
+    line-height: 26px;
+    list-style-type: initial;
+    padding-left: 20px;
+    padding-right: 36px;
 }
 
 /* Three Polygon */
@@ -235,17 +253,18 @@ hr{
     background-color: #F7F7FB;
     text-align: center;
     position: relative;
+    margin-bottom: 38px;
 }
-.third_section::after{
+.third_section .maindiv::after{
     position: absolute;
     width: 50px;
     height: 50px;
     box-shadow: 1px 1px 0px 0px #8D87A8;
     top: 300px;
-    left: 384px;
-    margin-left: 250px;
+    left: 50%;
+    margin-left: -23px;
     content:"";
-    margin-top: 130px;
+    margin-top: 110px;
     transform: rotate(45deg);
     background: #F7F7FB;
 }
@@ -258,13 +277,14 @@ hr{
     margin-bottom: 53px;
     margin-top: 0px;
     font-weight: 300;
+    line-height: 26px;
 }
 .third_sec_poly{
     display: inline-block;
     margin-bottom: 66px;
     text-align: center;
 }
-.poly5{
+.poly5-6-7{
     background-image: url(../Images/poly5.png);
     width: 230px;
     height: 258px;
@@ -273,10 +293,10 @@ hr{
     text-align: center;
     background-position: center;
 }
-.poly5_img2{
+.poly5-6-7_img2{
+    margin-top: 17px;
     margin-left: 14px;
-    margin-right: 17px;
-    margin-top: 22px;
+    margin-right: 14px;
 }
 
 .poly6_inner_headings{
@@ -316,13 +336,9 @@ hr{
     font-size: 22px;
     font-family: 'Rubik', sans-serif;
     font-weight: 500;
+    line-height: 26px;
 }
-/*.third_sec_heading2-3{
-    margin-bottom: 25px;
-    color: #FFFFFF;
-    margin-top: 40px;
-    text-align: center; 
-}*/ 
+
 .third_sec_text{
     color: white;
     font-family: 'Rubik', sans-serif;
@@ -362,37 +378,31 @@ hr{
 
 footer{
     background-color: #2A2735;
-    padding: 30px 0px;
 }
 .footer_text{
-    color: #A5A5A5;
-    font-size: 13px;
-    text-align: left;
-    font-family: 'Montserrat', sans-serif;
-    margin: 0px 0px; 
-    display: inline;
-    font-weight: 400;
+    display: inline-block;
+    margin: 30px 0px;
 }
 .logo_bckground{
     background-image: url(../Images/footer.svg);
     width: 33px;
     height: 36px;
-    font-size:24px;
     background-repeat: no-repeat;
     float: left;
-    padding-right: 9px;
-    text-align: center;
+    padding-top: 11px;
 }
 .footer_logos{
     float: right;
-}
-i{
-    padding-top: 7px;
+    margin-top: 20px;
 }
 .logo_bckground a{
     color: white;
+    margin-left: 10px;
 }
-
-
-
-
+footer{
+    background-color: #2A2735;
+    font-family: 'Montserrat', sans-serif;
+    color: #A5A5A5;
+    font-size: 13px;
+    text-align: left;
+}
